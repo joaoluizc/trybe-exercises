@@ -118,25 +118,25 @@ let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 // item 3
 let arrayPalavras = ['java', 'javascript', 'python', 'html', 'css'];
 // Utilize a estrutura de repetição for para escrever dois algoritmos: um que imprima no console a maior palavra desse array e outro que imprima a menor. Considere o número de caracteres de cada palavra.
-function biggestWord(array) {
-  let biggestWordStr = array[0];
-  for (let i = 0; i < array.length; i += 1) {
-    if (biggestWordStr.length < array[i].length) {
-      biggestWordStr = array[i];
-    }
-  }
-  return `A maior palavra é '${biggestWordStr}', com ${biggestWordStr.length} caracteres.`;
-}
+// function biggestWord(array) {
+//   let biggestWordStr = array[0];
+//   for (let i = 0; i < array.length; i += 1) {
+//     if (biggestWordStr.length < array[i].length) {
+//       biggestWordStr = array[i];
+//     }
+//   }
+//   return `A maior palavra é '${biggestWordStr}', com ${biggestWordStr.length} caracteres.`;
+// }
 
-function smallestWord(array) {
-  let smallestWordStr = array[0];
-  for (let i = 0; i < array.length; i += 1) {
-    if (smallestWordStr.length > array[i].length) {
-      smallestWordStr = array[i];
-    }
-  }
-  return `A menor palavra é '${smallestWordStr}', com ${smallestWordStr.length} caracteres.`;
-}
+// function smallestWord(array) {
+//   let smallestWordStr = array[0];
+//   for (let i = 0; i < array.length; i += 1) {
+//     if (smallestWordStr.length > array[i].length) {
+//       smallestWordStr = array[i];
+//     }
+//   }
+//   return `A menor palavra é '${smallestWordStr}', com ${smallestWordStr.length} caracteres.`;
+// }
 
-console.log(biggestWord(arrayPalavras));
-console.log(smallestWord(arrayPalavras));
+// console.log(biggestWord(arrayPalavras));
+// console.log(smallestWord(arrayPalavras));
