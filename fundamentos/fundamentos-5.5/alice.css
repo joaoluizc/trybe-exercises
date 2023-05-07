@@ -1,0 +1,67 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /* overflow: hidden; */
+  /* height: 100vh; */
+}
+
+header {
+  background-color: beige;
+  top: 0;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav {
+  width: 300px;
+}
+
+header ul {
+  display: flex;
+  justify-content: space-evenly;
+  list-style-type: none;
+}
+
+.container {
+  display: flex;
+  height: 100%;
+}
+
+.asides {
+  flex: 1 0 10%;
+  padding: 15px;
+}
+
+.asides li {
+  list-style-type: none;
+}
+
+.aside-one,
+.aside-two,
+footer {
+  padding: 10px;
+}
+
+.aside-one>h2,
+.aside-two>h2,
+footer>h3 {
+  margin: 0.67em 0;
+}
+
+.main-content {
+  /* overflow-y: auto; */
+  width: 60%;
+  flex: 8 0;
+  padding: 15px;
+}
