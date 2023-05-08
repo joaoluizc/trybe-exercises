@@ -1,9 +1,9 @@
 const checkLottery = (bet, checkFunc) => {
-  return checkFunc(bet) ? 'Parabéns, você ganhou' : 'Tente novamente';
+  const result = Math.ceil(Math.random() * 5);
+  return checkFunc(bet, result) ? 'Parabéns, você ganhou' : 'Tente novamente';
 };
 
-function checkBet(bet) {
-  const result = Math.ceil(Math.random() * 5);
+function checkBet(bet, result) {
   return bet === result ? true : false;
 }
 

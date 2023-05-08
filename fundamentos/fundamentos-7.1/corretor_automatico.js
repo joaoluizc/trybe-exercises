@@ -1,15 +1,17 @@
 //Esses exercícios não tão fazendo mt sentido pra mim... To só #TrustTheProcess.
 
 const corretor = (corrAnswArr, givenAnswArr, checkAnswersFunc) => {
-  return checkAnswersFunc(corrAnswArr, givenAnswArr);
-}
-
-const checkAnswers = (correctAnswers, givenAnswers) => {
   let score = 0;
-  correctAnswers.forEach((item, index) => {
-    if (item === givenAnswers[index]) score += 1;
+  givenAnswArr.forEach((givenAnswer, index) => {
+    score += checkAnswersFunc(corrAnswArr[index], givenAnswer);
   })
   return score;
+}
+
+const checkAnswers = (correctAnswer, givenAnswer) => {
+  if (givenAnswer === correctAnswer) return 1;
+  if (givenAnswer === 'N.A') return 0;
+  if (givenAnswer !== correctAnswer) return -0.5;
 }
 
 const RIGHT_ANSWERS = ['A', 'C', 'B', 'D', 'A', 'A', 'D', 'A', 'D', 'C'];

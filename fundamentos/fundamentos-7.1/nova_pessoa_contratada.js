@@ -8,14 +8,9 @@ const newEmployees = () => {
 };
 
 const makeEmail = (name) => {
-  const nameArr = name.toLowerCase().split(' ');
-  let email = nameArr[0];
-  nameArr.forEach((namePart, index) => {
-    if (index == 0) return
-    email = email.concat('_', namePart);
-  })
-  email = email.concat('', '@trybe.com');
-  return email;
+  const emailName = name.toLowerCase().split(' ').join('_');
+  email = emailName.concat('', '@trybe.com');
+  return { nomeCompleto: name, email };
 }
 
 console.log(newEmployees());
